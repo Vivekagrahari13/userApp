@@ -2,9 +2,31 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>User Web App</title>
 </head>
 <body>
-<h1> Welome To my App</h1>
+	<h1>User App</h1>
+	<hr>
+	<h3>Search User</h3>
+	<form action="SearchUser" method="post">
+		<label>Name:</label> <input type="text" name="name" required /> <br>
+		<br>
+		<button>Search</button>
+	</form>
+	<hr>
+	<h3>Add User</h3>
+	<form action="AddUser" method="post">
+		<label>Email:</label> <input type="email" name="email" required /> <br>
+		<br> <label>Name:</label> <input type="text" name="name" required />
+		<br> <br> <label>Phone:</label> <input type="tel"
+			name="phone" maxlength='10' required /> <br> <br> <label>Age:</label>
+		<input type="number" name="age" required /> <br> <br> <label>Gender:</label>
+		<input type="radio" name="gender" value="Male" checked /> Male <input
+			type="radio" name="gender" value="Female" /> Female <br> <br>
+		<label>Address:</label>
+		<textarea rows='3' name="address"></textarea>
+		<br> <br>
+		<button>Add User</button>
+	</form>
 </body>
 </html>
